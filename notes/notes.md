@@ -49,6 +49,19 @@ Caesar - substituční 100-44 př.n.l ...
 
 
 
+## 
+
+
+K(E): 41532 ... vem 4 znak z bloku a zapis na 1 pozici, udelej potom 
+
+Symetrické klíče bývají většinou dlouhodobé..
+
+Pokud se jedná o stejnou distribuci jako v přirozeném jazyce, pak se povětšinou jedná o transpoziční šifru. Jelikož ta nemá vlanost záměny distrubce monogramů (znaků).
+
+
+
+
+
 
 
 
