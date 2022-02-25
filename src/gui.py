@@ -10,12 +10,16 @@ import tkinter as tk
 import tkinter.ttk as ttk
 from tkinter.constants import *
 from tkinter import filedialog
-import os
-
 import gui_support
+from gen_alphabet import generate_alphabet
+from ciphers.vigener import VigenerCipher
 
 class KPB:
     def __init__(self, top=None):
+        self.alphabet = generate_alphabet(65, 90)
+        self.specified_key = "ZIMA"
+        self.v_c = VigenerCipher(self.alphabet)
+
         '''This class configures and populates the toplevel window.
            top is the toplevel containing window.'''
         _bgcolor = '#d9d9d9'  # X11 color: 'gray85'
@@ -192,12 +196,14 @@ class KPB:
 
     def decode(self):
         sa_text = self.SAText.get("1.0", END)
-        oa_text = f"LOL {sa_text}"
+        sa_text = sa_text.replace('\n', '')
+        oa_text = self.v_c.decode(sa_text, self.specified_key)
         self.write_into(self.OAText, oa_text)
 
     def encode(self):
         oa_text = self.OAText.get("1.0", END)
-        sa_text = f"LOL {oa_text}"
+        oa_text = oa_text.replace('\n', '')
+        sa_text = self.v_c.encode(oa_text, self.specified_key)
         self.write_into(self.SAText, sa_text)
 
     def write_into(self, text_area, text):
