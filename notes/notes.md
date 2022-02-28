@@ -49,14 +49,21 @@ Caesar - substituční 100-44 př.n.l ...
 
 
 
-## 
+### 21.2.2022
+
+- K(E): 41532 ... vem 4 znak z bloku a zapis na 1 pozici, udelej potom.
+- Symetrické klíče bývají většinou dlouhodobé..
+- Pokud se jedná o stejnou distribuci jako v přirozeném jazyce, pak se povětšinou jedná o transpoziční šifru. Jelikož ta nemá vlanost záměny distrubce monogramů (znaků).
 
 
-K(E): 41532 ... vem 4 znak z bloku a zapis na 1 pozici, udelej potom 
+### 28.2.2022
 
-Symetrické klíče bývají většinou dlouhodobé..
-
-Pokud se jedná o stejnou distribuci jako v přirozeném jazyce, pak se povětšinou jedná o transpoziční šifru. Jelikož ta nemá vlanost záměny distrubce monogramů (znaků).
+- Vigener čím více sloupců tím více permutací, a tak bývá samotná šifra bezpečnější.
+- Chceme uniformní rozdělení 0 a 1. Tzn. stejné množství.
+- Nechceme aby další bity byly predikovatelné.
+- DES 64, AES 128.
+- Povětšinou dochází k rozdělení textu na bloky o definované velikosti. (například 128 bitů). Pokud poslední blok nemá 128 bitů, pak dochází k paddingu neboli zarovnání za účelem získání celého bloku. Zároveň musí dojít k přídání informace ohledně délky. Kontrola chyby přenosu.
+- Cloth Shannon otec informace, redudance. Teoretické navržení moderních algoritmů, tak aby byly náhodilé, jednoznačné a podobně.
 
 
 
