@@ -67,6 +67,16 @@ Caesar - substituční 100-44 př.n.l ...
 
 
 
+### 7.3.2022
+
+- AES 128 ... 128 popisuje velikost bloku.
+- Šifry složené z permutací a substitucí. Permutace jsou méně složitá. Substituce na menších slovech (méně náročné). Permutace na delších slovech. Většinou fungují v iteracích.
+- 3DES poskytuje lepší zabezpečení, akorát dochází k použítí 3 operací místo 1. Tudíž musíme přepokládat 3 násobně delší čast k převedení otevřeného textu na šifrový nebo naopak.
+- DES - dvojité šifrování... můžeme najít 2 klíče odlišné které generují po šifrování a dešifrování text.
+
+
+### 
+
 
 
 
