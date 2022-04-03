@@ -1,0 +1,84 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[cp1250]{inputenc}
+\usepackage[czech]{babel}
+%\usepackage{czech}
+%\usepackage{pstricks,pst-node,pst-tree}
+\pagestyle{empty}
+\usepackage{graphicx}
+
+
+\topmargin -1.5cm
+\textwidth 18cm
+\textheight 25cm
+\oddsidemargin -1cm
+
+%bodovani pisemky:
+
+\begin{document}
+%%%%%%%%%%%%%%%%
+\begin{center} {\Large \bf 2. zápoètovı úkol z KPB - zadáno dne 23.3.2022} \end{center}
+
+{\bf Informace:} \begin{itemize} \item \textbf{Termín odevzdání je 6.3.2022 do 23:59}.  
+\item Na øešení není mono spolupracovat s ostatními studenty.
+\item Øešení budete odevzdávat pouze elektronicky. Zašlete jeden archivní soubor s øešením na mùj email, pojmenujte ho svım loginem (loginy), do pøedmìtu emailové zprávy napište ``2. zápoèet KPB''. Souèástí archivu bude jednak dokumentace v pdf formátu popisující postup Vašeho øešení, a dále zdrojové kódy s vašimi aplikacemi, pokud jste je ještì neodevzdávali v rámci 1. úkolu.  Neposílejte exe, dll soubory apod., neprojde to školní poštou.
+\item K vyøešení mùete pouívat jakékoliv studijní materiály a nástroje (napø. Cryptool nebo web\\ {\tt http://www.practicalcryptography.com/cryptanalysis/}), odkazy na nì musí bıt v dokumentaci. Pouijte pokud mono také vlastní implementace ze cvièení. Pokud pro nìjakou èást potøebnıch krokù pouijete jinı software, uveïte ho v dokumentaci (napø. jeho URL adresu).
+\end{itemize} \vspace{0.1cm}
+
+\begin{enumerate}
+\item (2 body) Následující šifrovı text vznikl obecnou monoalafabetickou substitucí z anglického textu, otevøená i šifrová abeceda jsou anglická abeceda bez mezery. Dešifrujte jej a kromì otevøeného textu uveïte pouitı klíè (šifrovou abecedu) a postup øešení. Vyuijte Chí-kvadrát test. Mùete také vyuít frekvence monogramù, bigramù, atd. z\\ {\tt http://www.practicalcryptography.com/cryptanalysis/letter-frequencies-various-languages/}.
+
+{\tt OJRGEQKTRNDEVPDOAGRKTLPKUEJNETPVJNEUOJNEJRUVJAKAGQVWRGENPOQLQBOEQKTHVLVJEQEWKKCNSRLP}\\
+{\tt OJRQRGEVDFKJCIDKQQKFQAJVPDECRPEEQVJCOPOQEQRGVRCKRRECRGETPEJNGDVJCQNVLEPEFOJCECGOFKTJ}\\
+{\tt VRSPEQNEJEQLVOJRECOJBYKRKVJCOJRGEDKNVDQWGKCPVJBOJNVTEQKTVPDEQGEQVWPEQKJVJNEQWORGRGEA}\\
+{\tt EOQGVQVJCBVISBOVNRKPQKTVNKSJRPYGECJEUEPUOQORECVRTOPQRUVJAKAGQOFLDYNKLOECRGEWKPBQOJIK}\\
+{\tt RGQBERNGEQVJCKODLVOJROJAQIYRGEROFERGEVPROQRFKUECRKVPDEQGEWVQTSDDYOJRGERGPVDDKTHVLVJK}\\
+{\tt JRGERPVOJTPKFLVPOQGEPELEVRECDYNGENBECKSRRGEWOJCKWGEWPKRERKGOQTPOEJCLVSDAVSASOJRKQEEO}\\
+{\tt TORWVQDOBEHVLVJYER!NGODCOQGOQJRORRGEOFLVNRWVQFKPEQSIRDEFKPEISPOECOJGOQRENGJOMSETKPOJ}\\
+{\tt QRVJNEGEQKFEROFEQCOUOCECRGENVJUVQSQOJACOVAKJVDDOJEQPVRGEPRGVJSQOJAGKPOZKJRVDLEPQLENR}\\
+{\tt OUELDVJEQVQWVQRGEJKPFOJWEQREPJLVOJROJAVJCGEWKSDCQRPEVBGOQLVOJROJAQWORGCOVAKJVDPVOJVQ}\\
+{\tt GEGVCQEEJOJHVLVJEQELPOJRQ}\\
+
+\item (3 body) Následující šifrovı text opìt vznikl obecnou monoalafabetickou substitucí z anglického textu, otevøená i šifrová abeceda jsou anglická abeceda bez mezery. Dešifrujte jej a kromì otevøeného textu uveïte pouitı klíè (šifrovou abecedu) a postup øešení. Rozhodnìte, co je neobvyklé na získaném otevøeném textu, a jaké to mùe mít dùsledky (co to ovlivní)? Upøesnìte, jaká šifra byla pouita.
+
+{\tt RUBLFGSGSILFTSLFGZOOSRHGLIBSZWSZWZXSZNKRLMGLHGZMWFKULIRGGLHSLDZWLFYGRMTDLIOWGSZGZXSR}\\
+{\tt OWXZMGSRMPZMWKLHHRYOBWLRGKIZXGRXZOOBBLFDLFOWMGXLMHGZMGOBIFMZXILHHULOPHGLWZBDSLXOZRNG}\\
+{\tt SZGZXSROWWLMGPMLDZMBGSRMTZXSROWHYIZRMHGZIGHUFMXGRLMRMTZGYRIGSZMWSZHZNLMTHGRGHNZMBRMU}\\
+{\tt ZMGXLMELOFGRLMHGSLFHZMWHLUWLINZMGZGLNHRMGLDSRXSTLWSZHKFGZNBHGRXKLHHRYRORGBULIMLGRXRM}\\
+{\tt TZMZWFOGHZXGZMWURTFIRMTLFGRGHKFIKLIG}\\
+
+\item (2 body) Následující šifrovı text vznikl Vigenerovou šifrou pomocí klíèe o délce nejvıše $6$ znakù. Kromì získaného otevøeného textu uveïte klíè pouitı jak pro dešifrování tak pro šifrování a postup øešení. Pøípustná abeceda je anglická abeceda bez mezery. Pouijte index koincicence a/nebo Kasiského test.
+
+{\tt HMHLTBTQMUZOJWYEUHSVTCHEUOCGGBODRDTQKGVLOBROKRPFQOSDYQSDRZPQMSOWNSNRTJPQZWZQGZHLYRZP}\\
+{\tt XSRDXRTQMKSDZWDDIVTHBOMOKOYGYVPKGRLPKGDDMSQRXOYBECFQMGEHXGHKUATJNHHLYVERLCWOUKTQNSCI}\\
+{\tt UCEVZSAVGBODOAQRXGFFISDVUBMRZVDNOGLQJGYRCPZDXRORCVLWKJPUECFZGBEVNSDDORTIECFZGBEWUQSR}\\
+{\tt UGPMAGERTSEKKBNKUCDHPIDWUBPLCOYWKRERIVZRYSMRZVLQJOWRZCQSKCAOKHZOJAPWNOELZGYRZDZVYWMO}\\
+{\tt KHZJKHERZVPWUDTQHCEKUPGLUIDOEWEVTCEHGGJLZGLJXSLWZVTQMHSDZWNDTPPKKFPLTPZWNGARXHDDTRPQ}\\
+{\tt PCJEUHSVVCCWYVPUKWYWNSCHVIMOOQZIQCCHGAJSROYLYHZVZOJZOHSPEVPDXHDRLCCQUKTWNWYNOKTORRZE}\\
+{\tt UHSEKQLXYSTOUJPEUHSDTRTOUJPWURZWNWDVNSLGJSO}\\
+
+
+\item (3 body)
+Je známo, e opìtovné pouití tého klíèe u Vernamovy šifry (One-time Pad) mùe bıt nebezpeèné. 
+V této úloze jsou všechny znaky reprezentovány jako $8$ bitù v obvyklém US-ASCII kódování (napøíklad 'A' je $0x41$). 
+Nech $M = (m_1, m_2, ..., m_n)$ je otevøenı text, kterı se skládá ze sekvence $n$ bajtù. Nech $K = (k_1, k_2, ..., k_n)$ je klíè skládající se opìt z $n$ bajtù. A jak je obvyklé, $n$ bajtová sekvence $C = (c_1, c_2, ..., c_n)$ je šifrovı text získanı "`$xor$-ováním"' kadého bajtu otevøeného textu s odpovídajícím bajtem klíèe $c_i = m_i \oplus k_i$, pro $i = 1, 2, ..., n$.
+Pokud budeme mít více ne jeden otevøenı text, budeme tyto oznaèovat jako $M_1, M_2, ..., M_k$ a bajty OT jako $M_j$ jako $m_{ji}$, a to $M_j = (m_{j1}, ..., m_{jn})$; analogické oznaèení pouijeme pro odpovídající šifrové texty. 
+
+Mìjme dva $12$-znakové šifrové texty $C_1, C_2$ obdrené Vernamovou šifrou. Rozhodnìte, zda byly zašifrovány stejnım klíèem nebo klíèi rùznımi. Pokud jsou klíèe rùzné, vysvìtlete proè nemohou bıt stejné. Pokud jsou klíèe stejné, pak dešifrujte šifrové texty. Souèástí øešení budou oba otevøené texty $M_1, M_2$, správné klíèe/klíè a postup Vašeho øešení. \textbf{Otevøenımi texty je vdy SMYSLUPLNÉ celé anglické slovo o $12$ znacích ze slovníku uvedeného v souboru {\tt dic.txt}.} Otevøená abeceda je anglická abeceda bez mezery, obsahuje jen alfabetické znaky (malé i velké). Šifrová abeceda je 128 znakù ASCII tabulky.
+
+$C_1=$ {\tt 3c 05 02 1d 07 0c 0c 1a 18 0c 1d 17}\\
+$C_2=$ {\tt 03 19 11 10 01 00 0f 19 03 1a 11 0a}
+
+\item (2 body) Vyluštìte tento šifrovı text (jednoduchá transpozice (Columnar transposition)), naleznìte oba klíèe (obì permutace - šifrovací, dešifrovací). Otevøenı text byl v èeštinì, pøípustná abeceda je anglická abeceda bez mezery. Uveïte postup øešení.
+
+{\tt IVCTIARJLNKEKCKRNICIDIVAMISVHWEIPIEIANBMOMDTLRRAKIEMTMNOYSNAMEZETOUDGUDTAMCSIOJZUCAB}\\
+{\tt UETANKNSENEFMDIOAJPRCLSCVCDUCPOENPOZNEHSONIPUDOMEAHYEIAPUUSOMTNINRNBOAIIOAIINTAKCZHN}\\
+{\tt ACVCKAVSLPJOTREOIAESJHCKAORDUIAOADWDIAZANNSNDCJQLEISJDERZIAMAISDECITOJZVONTOCSVCOJST}\\
+{\tt MAAIPIAEYPONEMTESEYKDEEDAJHNODHZIFAEMOYJBPLNKINEULNKYNZLMRRIOTVTDEEEIAEIDLHAMTAEEAJZ}\\
+{\tt AIYAAAHCINANEMTAPIVCIZNSLEIPJPOAAEILOCOIRAOVVTYTEJLNASJYNRAOLAHILPEDTIFOMSAVECIINASI}\\
+{\tt EACSNDTEKSTIEACHOOTNVOEIZCCHSLSHVAZYZDANRFLHSKOPYSLREAXKPNGNNKRNYRVEIACZNIEIMTETATAP}\\
+{\tt EMLMNSDIUCAOEPKZFNDKTAUCZTUNIEACYIUQ}\\
+
+\end{enumerate}
+
+
+\end{document}
